@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidWorks Project | MSDS Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .project-hero {
+            height: 60vh;
+            position: relative;
+        }
+        .nav-transparent {
+            background-color: rgba(17, 24, 39, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        .nav-opaque {
+            background-color: rgba(17, 24, 39, 1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-opaque">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
+        <div class="container mx-auto h-full flex items-center px-6">
+            <div class="max-w-4xl">
+                <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
+                    <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
+                </a>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">SolidWorks Design Project</h1>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">SolidWorks</span>
+                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">CAD Design</span>
+                    <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Engineering</span>
+                </div>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Advanced mechanical component design and simulation using SolidWorks for industrial applications.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
+                        <i data-feather="github" class="mr-2"></i> GitHub
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
+                        <i data-feather="edit" class="mr-2"></i> Medium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Overview Section -->
+                <div class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                    <div class="prose prose-invert max-w-none">
+                        <p>This project involved the design and simulation of complex mechanical components for industrial machinery using SolidWorks. The goal was to create optimized designs that meet stringent performance requirements while reducing material usage and manufacturing costs.</p>
+                        <p>Key aspects included parametric modeling, finite element analysis (FEA), and creating detailed manufacturing drawings with GD&T specifications.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Design Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="http://static.photos/industry/1200x630/10" alt="SolidWorks Design" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="http://static.photos/technology/1200x630/11" alt="SolidWorks Design" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="http://static.photos/workspace/1200x630/12" alt="SolidWorks Design" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="http://static.photos/construction/1200x630/13" alt="SolidWorks Design" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lessons Learned -->
+                <div data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Key Features</h2>
+                    <div class="prose prose-invert max-w-none">
+                        <ul>
+                            <li>Parametric modeling for design flexibility</li>
+                            <li>Finite element analysis for stress testing</li>
+                            <li>Motion studies for kinematic analysis</li>
+                            <li>Detailed manufacturing drawings with GD&T</li>
+                            <li>Material optimization for cost reduction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
+                    <p class="text-gray-400 mt-2">Bridging Materials Science and Data Engineering</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="text-gray-400">&copy; 2023 Alex's Portfolio. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize animations
+        AOS.init({
+            once: true,
+            duration: 800
+        });
+        
+        // Initialize feather icons
+        feather.replace();
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.remove('nav-transparent');
+                navbar.classList.add('nav-opaque');
+            } else {
+                navbar.classList.add('nav-transparent');
+                navbar.classList.remove('nav-opaque');
+            }
+        });
+    </script>
+</body>
+</html>
