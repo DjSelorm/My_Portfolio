@@ -15,9 +15,9 @@ My portfolio highlights:
 ---
 
 ## 🛠️ Technologies Used
-- **Frontend:** Deepsite  
-- **Animations:** Deepsite
-- **Icons:** Deepsite
+- **Frontend:** DeepSite  
+- **Animations:** DeepSite
+- **Icons:** DeepSite
 - **Deployment:** GitHub Pages  
 
 ---
