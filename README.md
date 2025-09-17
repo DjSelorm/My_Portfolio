@@ -1,4 +1,6 @@
-# 🌐 Marzuk Sulemana – Portfolio Website
+# 🌐 Marzuk Sulemana – Portfolio Website 
+Check out my [portfolio website](https://marzuk08.github.io).
+
 
 Welcome to my portfolio repository!  
 This repo contains the source code for my personal portfolio website, where I showcase my projects, skills, and experience in **Data Science, Engineering, and Design**.
