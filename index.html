@@ -41,7 +41,14 @@
         <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
             <div class="container mx-auto px-6 py-4">
                 <div class="flex justify-between items-center">
-                    <a href="#" class="text-2xl font-bold gradient-text">MSDS</a>
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="relative inline-block">
+                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
+                            </span>
+                        </span>
+                    </a>
                     <div class="hidden md:flex space-x-8">
                         <a href="#about" class="hover:text-blue-400 transition">About</a>
                         <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
@@ -50,7 +57,7 @@
                         <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
                         <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
                     </div>
-                    <button class="md:hidden focus:outline-none">
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                         <i data-feather="menu"></i>
                     </button>
                 </div>
@@ -71,7 +78,7 @@
                 </div>
                 <div class="hidden md:block relative w-64 h-64 mt-10 md:mt-0" data-aos="fade-left">
                     <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 blur-lg opacity-30"></div>
-                    <img src="http://static.photos/technology/640x360/42" alt="Alex" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
+                    <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Marzuk.jpeg" alt="Alex" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
                 </div>
             </div>
         </div>
@@ -88,7 +95,7 @@
                 <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
                     <div class="relative w-64 h-64 mx-auto">
                         <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 blur-lg opacity-30"></div>
-                        <img src="http://static.photos/technology/640x360/42" alt="Profile" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
+                        <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Marzuk2.JPG" alt="Profile" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-16" data-aos="fade-left" data-aos-delay="200">
@@ -104,11 +111,16 @@
                             <i data-feather="briefcase" class="mr-2 text-purple-400"></i>
                             <span>3+ Years Experience</span>
                         </div>
-                        <div class="flex items-center">
-                            <i data-feather="award" class="mr-2 text-green-600"></i>
-                            <span>MPhil. in Materials Science and Engineering (2022 - 2023)</span>
-                            <span>BSc. in Materials Science and Engineering (2016 - 2020)</span>
-                        </div>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="award" class="mr-2 text-green-600"></i>
+                                <span>MPhil. in Materials Science and Engineering (2022 - 2023)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="award" class="mr-2 text-green-600"></i>
+                                <span>BSc. in Materials Science and Engineering (2016 - 2020)</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -245,13 +257,15 @@
                             <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mr-3">
                                 <i data-feather="activity" class="text-white"></i>
                             </div>
-                            <h3 class="text-xl font-bold">ML for Materials Discovery</h3>
+                            <h3 class="text-xl font-bold">Ford GoBike System Data Analysis</h3>
                         </div>
-                        <p class="text-gray-300 mb-4">Developed a machine learning pipeline to predict material properties from composition and processing parameters, reducing experimental trial time by 60%.</p>
+                        <p class="text-gray-300 mb-4">This dataset includes information about individual rides made in a bike-sharing system. I learned about the
+FordGo bike system users through data exploration and presented key insights to help the company make
+informed business decisions.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Scikit-learn</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Materials Data</span>
+                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Pandas</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Matplotlib </span>
                         </div>
                         <a href="project1.html" class="text-blue-400 hover:text-blue-300 flex items-center">
                             Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
@@ -262,20 +276,20 @@
                 <!-- Project 2 -->
                 <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/1200x630/5" alt="Automated Characterization" class="w-full h-full object-cover">
+                        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*bYGyrjBMEhU0MlJ4s9OYLA.jpeg" alt="Automated Characterization" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center mr-3">
                                 <i data-feather="eye" class="text-white"></i>
                             </div>
-                            <h3 class="text-xl font-bold">Automated Microstructure Analysis</h3>
+                            <h3 class="text-xl font-bold">How I wrangle, analyze and visualize twitter user data: ‘We Rate Dogs’</h3>
                         </div>
-                        <p class="text-gray-300 mb-4">Created an image processing pipeline for automatic microstructure characterization from SEM images, improving analysis consistency and speed.</p>
+                        <p class="text-gray-300 mb-4">I wrangled, analyzed and visualized Twitter user account ‘WeRateDogs’ that rates people's dogs with a humorous comment about the dog.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">OpenCV</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Computer Vision</span>
+                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Seaborn</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Matplotlib</span>
                         </div>
                         <a href="project2.html" class="text-blue-400 hover:text-blue-300 flex items-center">
                             Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
@@ -286,20 +300,20 @@
                 <!-- Project 3 -->
                 <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/industry/1200x630/7" alt="Failure Analysis" class="w-full h-full object-cover">
+                        <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Screenshot%202025-09-16%20221451.png" alt="Failure Analysis" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
                                 <i data-feather="alert-triangle" class="text-white"></i>
                             </div>
-                            <h3 class="text-xl font-bold">Predictive Failure Analysis</h3>
+                            <h3 class="text-xl font-bold">From concept to 3D: a fully modeled office desk with storage features</h3>
                         </div>
-                        <p class="text-gray-300 mb-4">Developed a predictive model for material failure modes based on operational parameters and material properties, reducing unexpected failures by 45%.</p>
+                        <p class="text-gray-300 mb-4">Designed a functional office desk in SolidWorks, featuring drawers, cabinets, and support structures. Showcased skills in part modeling, assembly design, and exploded views.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">SolidWorks</span>
                             <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">FEA</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Failure Analysis</span>
+                            
                         </div>
                         <a href="project3.html" class="text-blue-400 hover:text-blue-300 flex items-center">
                             Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
@@ -310,31 +324,26 @@
                 <!-- Project 4 -->
                 <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="500">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/workspace/1200x630/9" alt="Materials Database" class="w-full h-full object-cover">
+                        <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Screenshot%202025-09-16%20201359.png" alt="Materials Database" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
                             <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center mr-3">
                                 <i data-feather="database" class="text-white"></i>
                             </div>
-                            <h3 class="text-xl font-bold">Materials Database System</h3>
+                            <h3 class="text-xl font-bold">Turning Superstore data into clear business insights through interactive dashboards</h3>
                         </div>
-                        <p class="text-gray-300 mb-4">Designed and implemented a comprehensive materials database with query and visualization tools for research team collaboration.</p>
+                        <p class="text-gray-300 mb-4">Built a dashboard highlighting key KPIs and visual trends to track revenue, profit, and customer performance across categories and segments.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">MongoDB</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">React</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Excel</span>
+                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Tableau</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">SQL</span>
                         </div>
                         <a href="project4.html" class="text-blue-400 hover:text-blue-300 flex items-center">
                             Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="text-center mt-12" data-aos="fade-up">
-                <a href="solidworks-project.html" class="px-6 py-3 border border-gray-600 rounded-full font-medium hover:bg-gray-700 transition inline-flex items-center">
-                    View All Projects <i data-feather="arrow-right" class="ml-2"></i>
-                </a>
             </div>
         </div>
     </section>
@@ -357,7 +366,7 @@
                         <div class="w-4 h-4 rounded-full bg-purple-500 mr-3"></div>
                         <h4 class="text-lg">Banga-Africa Solar Lab | University of Ghana</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Conducted research on advanced materials Modelling and Simulation, with a focus on Photovoltaic materials for solar cell application.</p>
+                    <p class="text-gray-300 mb-4">Conduct research on advanced materials Modelling and Simulation, with a focus on Photovoltaic materials for solar cell application.</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-300">
                         <li>Collaborate with research team to conduct materials computations through modelling and simulations,
 enhancing the understanding of material properties and behaviour.</li>
@@ -378,7 +387,7 @@ innovative solutions to material challenges.</li>
                         <div class="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
                         <h4 class="text-lg">Aya Data | Freelance | Remote</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Used V7 Darwin and CVAT to annotate images, videos, and texta with techniques like segmentation, bounding boxes, and tracking, ensuring high-quality datasets for machine learning.</p>
+                    <p class="text-gray-300 mb-4">Use V7 Darwin and CVAT to annotate images, videos, and texta with techniques like segmentation, bounding boxes, and tracking, ensuring high-quality datasets for machine learning.</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-300">
                         <li>Utilize V7 Darwin and Computer Vision Annotation Tool (CVAT) for efficient data annotation, enhancing
 dataset quality for machine learning applications.</li>
@@ -475,9 +484,9 @@ smooth operations.</li>
                         </div>
                         <h3 class="text-xl font-bold">Data Science Professional</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">IBM Data Science Professional Certificate</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Jan 2023</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <p class="text-gray-300 mb-4">ALX Data Science Professional Certificate</p>
+                    <div class="text-sm text-blue-400 mb-4">Issued: May 2025</div>
+                    <a href="https://savanna.alxafrica.com/certificates/H3fhNGrSM7" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -488,11 +497,11 @@ smooth operations.</li>
                         <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
                             <i data-feather="award" class="text-purple-400"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Machine Learning</h3>
+                        <h3 class="text-xl font-bold">Data Analytics Professional</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">Stanford University Machine Learning Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Aug 2022</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <p class="text-gray-300 mb-4">Google Data Analytics Certification</p>
+                    <div class="text-sm text-blue-400 mb-4">Issued: Dec 2022</div>
+                    <a href="https://coursera.org/share/73ebdaf018d8f514bce94aae4e042b6d" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -502,11 +511,11 @@ smooth operations.</li>
                         <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
                             <i data-feather="award" class="text-purple-400"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Machine Learning</h3>
+                        <h3 class="text-xl font-bold">Data Visualization Nanodegree</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">Stanford University Machine Learning Certification</p>
+                    <p class="text-gray-300 mb-4">Udacity Data Visualization Nanodegree Certification</p>
                     <div class="text-sm text-blue-400 mb-4">Issued: Aug 2022</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <a href="https://graduation.udacity.com/confirm/AKWN7CYK" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -516,11 +525,11 @@ smooth operations.</li>
                         <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
                             <i data-feather="award" class="text-purple-400"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Machine Learning</h3>
+                        <h3 class="text-xl font-bold">Data Analyst Nanodegree</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">Stanford University Machine Learning Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Aug 2022</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <p class="text-gray-300 mb-4">Udacity Data Analyst Nanodegree Certification</p>
+                    <div class="text-sm text-blue-400 mb-4">Issued: Jun 2022</div>
+                    <a href="https://www.udacity.com/certificate/GUPWXLLL" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -530,11 +539,11 @@ smooth operations.</li>
                         <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
                             <i data-feather="award" class="text-purple-400"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Machine Learning</h3>
+                        <h3 class="text-xl font-bold">Programming for Data Science with Python</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">Stanford University Machine Learning Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Aug 2022</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <p class="text-gray-300 mb-4">Udacity Programming for Data Science with Python Certification</p>
+                    <div class="text-sm text-blue-400 mb-4">Issued: Jan 2022</div>
+                    <a href="https://www.udacity.com/certificate/DE3L2VSD" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -545,11 +554,11 @@ smooth operations.</li>
                         <div class="p-3 rounded-lg bg-green-900/30 mr-4">
                             <i data-feather="award" class="text-green-400"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Materials Characterization</h3>
+                        <h3 class="text-xl font-bold">Finite Element Modelling, Simulation, 3-D Design and Printing and Electrochemical Testing Methods</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">MIT Professional Education - Materials Analysis</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: May 2021</div>
-                    <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                    <p class="text-gray-300 mb-4">AMRS UG Chaapter Metrohm Workshop Certification</p>
+                    <div class="text-sm text-blue-400 mb-4">Issued: Feb 2020</div>
+                    <a href="https://drive.google.com/drive/folders/15-0PzBKDw591nFi1aIHJk447JreImAfi" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
                     </a>
                 </div>
@@ -575,7 +584,7 @@ smooth operations.</li>
                                 </div>
                                 <div>
                                     <h4 class="font-medium">Email</h4>
-                                    <p class="text-gray-300">alex@materials-data-science.com</p>
+                                    <p class="text-gray-300">nimos123@proton.me</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -584,7 +593,7 @@ smooth operations.</li>
                                 </div>
                                 <div>
                                     <h4 class="font-medium">Phone</h4>
-                                    <p class="text-gray-300">(415) 555-0198</p>
+                                    <p class="text-gray-300">(233) 555-0198</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -593,23 +602,23 @@ smooth operations.</li>
                                 </div>
                                 <div>
                                     <h4 class="font-medium">Location</h4>
-                                    <p class="text-gray-300">San Francisco, CA</p>
+                                    <p class="text-gray-300">Accra, Ghana</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-10">
                             <h4 class="text-xl font-bold mb-4">Connect With Me</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-blue-600 transition">
+                                <a href="https://www.linkedin.com/in/marzuk-sulemana/" class="p-3 rounded-full bg-gray-700 hover:bg-blue-600 transition">
                                     <i data-feather="linkedin" class="text-white"></i>
                                 </a>
-                                <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition">
+                                <a href="https://marzuk08.github.io/" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition">
                                     <i data-feather="github" class="text-white"></i>
                                 </a>
                                 <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-blue-400 transition">
                                     <i data-feather="twitter" class="text-white"></i>
                                 </a>
-                                <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-red-500 transition">
+                                <a href="https://www.youtube.com/channel/UCsj8TEpXGVPX1FKRvg-FJzg" class="p-3 rounded-full bg-gray-700 hover:bg-red-500 transition">
                                     <i data-feather="youtube" class="text-white"></i>
                                 </a>
                             </div>
@@ -646,11 +655,18 @@ smooth operations.</li>
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row md:justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="#" class="text-2xl font-bold gradient-text">MSDS</a>
-                    <p class="text-gray-400 mt-2">Bridging Materials Science and Data Engineering</p>
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="relative inline-block">
+                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
+                            </span>
+                        </span>
+                    </a>
+                    <p class="text-gray-400 mt-2">Bridging Materials Engineering and Data Science</p>
                 </div>
                 <div class="flex flex-col items-center md:items-end">
-                    <p class="text-gray-400">&copy; 2023 Alex's Portfolio. All rights reserved.</p>
+                    <p class="text-gray-400">&copy; 2023 Marzuk's Portfolio. All rights reserved.</p>
                     <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation</p>
                 </div>
             </div>
@@ -658,6 +674,45 @@ smooth operations.</li>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.id = 'mobile-menu';
+        mobileMenu.className = 'hidden md:hidden fixed top-0 right-0 h-full w-64 bg-gray-900 z-40 flex flex-col items-start p-6 space-y-6 border-l border-gray-800 shadow-xl';
+        mobileMenu.innerHTML = `
+            <button id="mobile-menu-close" class="self-end p-2">
+                <i data-feather="x"></i>
+            </button>
+            <a href="#about" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#skills" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a>
+            <a href="#projects" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+            <a href="#experience" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+            <a href="#certifications" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Certifications</a>
+            <a href="#contact" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        `;
+
+        document.body.appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+            feather.replace();
+        });
+
+        document.getElementById('mobile-menu-close').addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
         // Initialize animations
         AOS.init({
             once: true,
@@ -696,7 +751,5 @@ smooth operations.</li>
     </script>
 </body>
 </html>
-
-
 
 
