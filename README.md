@@ -1,5 +1,5 @@
 # 🌐 Marzuk Sulemana – Portfolio Website 
-Check out my [portfolio website](https://marzuk08.github.io).
+Check out my [portfolio website](https://marzuk08.github.io/Portfolio).
 
 
 Welcome to my portfolio repository!  
