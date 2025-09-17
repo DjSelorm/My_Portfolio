@@ -11,6 +11,21 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <style>
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.2em;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            margin-left: 2px;
+            animation: blink 1s infinite;
+            vertical-align: text-bottom;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
         .gradient-text {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
@@ -68,7 +83,10 @@
         <div class="container mx-auto h-full flex items-center px-6">
             <div class="flex flex-col md:flex-row items-center w-full">
                 <div class="max-w-2xl md:mr-16" data-aos="fade-right">
-                    <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm <span class="gradient-text">Marzuk</span></h1>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                        <span id="typing-text" class="gradient-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </h1>
                     <h2 class="text-2xl md:text-3xl mb-6">Materials Engineer & Data Scientist</h2>
                     <p class="text-lg mb-8 text-gray-300">Bridging the gap between materials innovation and data-driven insights to solve complex engineering challenges.</p>
                     <div class="flex space-x-4">
@@ -612,7 +630,7 @@ smooth operations.</li>
                                 <a href="https://www.linkedin.com/in/marzuk-sulemana/" class="p-3 rounded-full bg-gray-700 hover:bg-blue-600 transition">
                                     <i data-feather="linkedin" class="text-white"></i>
                                 </a>
-                                <a href="https://marzuk08.github.io/" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition">
+                                <a href="https://github.com/Marzuk08/" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition">
                                     <i data-feather="github" class="text-white"></i>
                                 </a>
                                 <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-blue-400 transition">
@@ -701,8 +719,50 @@ smooth operations.</li>
             duration: 800
         });
         
+        // Typing animation
+        const typingText = document.getElementById('typing-text');
+        const cursor = document.querySelector('.typing-cursor');
+        const text = "Hi, I'm Marzuk.";
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 150;
+
+        function type() {
+            const currentText = text.substring(0, charIndex);
+            typingText.textContent = currentText;
+            
+            if (!isDeleting && charIndex < text.length) {
+                charIndex++;
+                typingSpeed = 150;
+            } else if (isDeleting && charIndex > 0) {
+                charIndex--;
+                typingSpeed = 50;
+            }
+            
+            if (charIndex === text.length) {
+                isDeleting = true;
+                typingSpeed = 2000; // Pause at end
+                cursor.style.opacity = '1'; // Ensure cursor is visible at end
+            } else if (charIndex === 0 && isDeleting) {
+                isDeleting = false;
+                typingSpeed = 500; // Pause at start
+            }
+            
+            setTimeout(type, typingSpeed);
+        }
+
+        // Cursor blink effect
+        function blinkCursor() {
+            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+            setTimeout(blinkCursor, 500);
+        }
+
         // Initialize feather icons
         feather.replace();
+        
+        // Start animations
+        type();
+        blinkCursor();
         
         // Vanta.js background
         VANTA.GLOBE({
