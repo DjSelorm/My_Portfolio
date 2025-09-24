@@ -30,21 +30,32 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-opaque">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
-                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
-                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="relative inline-block">
+                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                        <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                        <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                        <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                        <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                        <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
                 </div>
-                <button class="md:hidden focus:outline-none">
-                    <i data-feather="menu"></i>
-                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+
 
     <!-- Project Hero Section -->
     <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
@@ -53,69 +64,93 @@
                 <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
                     <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
                 </a>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">SolidWorks Design Project</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">From concept to 3D: a fully modeled office desk with storage features</h1>
                 <div class="flex flex-wrap gap-4 mb-8">
                     <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">SolidWorks</span>
-                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">CAD Design</span>
-                    <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Engineering</span>
+                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">FEA</span>
+                    
                 </div>
-                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Advanced mechanical component design and simulation using SolidWorks for industrial applications.</p>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Designed a functional office desk in SolidWorks, featuring drawers, cabinets, and support structures. Showcased skills in part modeling, assembly design, and exploded views.</p>
+
                 <div class="flex space-x-4">
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
-                        <i data-feather="github" class="mr-2"></i> GitHub
-                    </a>
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
-                        <i data-feather="edit" class="mr-2"></i> Medium
-                    </a>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Project Content -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <!-- Overview Section -->
-                <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                    <div class="prose prose-invert max-w-none">
-                        <p>This project involved the design and simulation of complex mechanical components for industrial machinery using SolidWorks. The goal was to create optimized designs that meet stringent performance requirements while reducing material usage and manufacturing costs.</p>
-                        <p>Key aspects included parametric modeling, finite element analysis (FEA), and creating detailed manufacturing drawings with GD&T specifications.</p>
-                    </div>
-                </div>
+<section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <!-- Overview Section -->
+            <div class="mb-20" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">This project involved designing a fully functional office desk in SolidWorks, complete with drawers, cabinets, and support structures. The work demonstrated proficiency in part modeling, assembly design, and the creation of exploded views, highlighting both technical accuracy and practical functionality in 3D modeling.</p>
+                
+            </div>
 
+<div data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Key Insights</h2>
+                    <div class="prose prose-invert max-w-none">
+                      <style>
+  .big-list li {
+    font-size: 20px;  /* Look like H1 */
+    
+  }
+</style>
+                        <l class="big-list">
+                            <li>Efficient use of parametric modeling in SolidWorks speeds up design adjustments and ensures accuracy.</li>
+                            <li>Assembly design helped identify alignment and clearance issues early, reducing potential manufacturing errors.</li>
+                            <li>Exploded views and detailed modeling enhanced communication of design intent, making the desk’s features and functionality clearer.</li>
+                            <li>Incorporating storage components (drawers and cabinets) required balancing space efficiency with structural stability.</li>
+                            
+                        </ul>
+                        <h2 class="text-3xl font-bold mb-6"></h2>
+                        
+                        <h2 class="text-3xl font-bold mb-6">
+
+                        </h2>
+                    </div>
+                    <br>
                 <!-- Gallery Section -->
                 <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Design Gallery</h2>
+                    <h2 class="text-3xl font-bold mb-6">Project Gallery</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/industry/1200x630/10" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project3Pic1.png" alt="Picture " class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/technology/1200x630/11" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project3Pic2.png" alt=" Picture" class="w-full h-full object-cover">
                         </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/workspace/1200x630/12" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/construction/1200x630/13" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
+                        
+                        
                     </div>
                 </div>
 
                 <!-- Lessons Learned -->
                 <div data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Key Features</h2>
+                    <h2 class="text-3xl font-bold mb-6">What I learned</h2>
+                    
                     <div class="prose prose-invert max-w-none">
-                        <ul>
-                            <li>Parametric modeling for design flexibility</li>
-                            <li>Finite element analysis for stress testing</li>
-                            <li>Motion studies for kinematic analysis</li>
-                            <li>Detailed manufacturing drawings with GD&T</li>
-                            <li>Material optimization for cost reduction</li>
+                      <style>
+  .big-list li {
+    font-size: 20px;  /* Look like H1 */
+    
+  }
+</style>
+                        <l class="big-list" >
+                            <li>Improved proficiency in part modeling and applying design features such as extrusions, cuts, and fillets.</li>
+                            <li>Gained hands-on experience in assembly design, ensuring proper fit and motion between multiple components.</li>
+                            <li>Learned how to create and interpret exploded views for clearer presentation of complex designs.</li><li>
+                            Developed better workflows for organizing and managing multi-part projects in CAD.
+                            </li>
+                            
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -126,11 +161,11 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row md:justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
+                    <a href="index.html" class="text-2xl font-bold gradient-text">MS</a>
                     <p class="text-gray-400 mt-2">Bridging Materials Science and Data Engineering</p>
                 </div>
                 <div class="flex flex-col items-center md:items-end">
-                    <p class="text-gray-400">&copy; 2023 Alex's Portfolio. All rights reserved.</p>
+                    <p class="text-gray-400">&copy; 2025 Marzuk's Portfolio. All rights reserved.</p>
                     <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation</p>
                 </div>
             </div>
