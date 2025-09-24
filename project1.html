@@ -30,21 +30,32 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-opaque">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
-                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
-                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="relative inline-block">
+                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#about" class="hover:text-blue-400 transition">About</a>
+                        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                        <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
                 </div>
-                <button class="md:hidden focus:outline-none">
-                    <i data-feather="menu"></i>
-                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+
 
     <!-- Project Hero Section -->
     <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
@@ -53,18 +64,19 @@
                 <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
                     <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
                 </a>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">SolidWorks Design Project</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">Ford GoBike System Data Analysis</h1>
                 <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">SolidWorks</span>
-                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">CAD Design</span>
-                    <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Engineering</span>
+                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Python</span>
+                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">Pandas</span>
+                    <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Matplotlib</span>
                 </div>
-                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Advanced mechanical component design and simulation using SolidWorks for industrial applications.</p>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">This dataset includes information about individual rides made in a bike-sharing system. I learned about the customers through data exploration and presented key insights to help the company make informed business decisions.</p>
+
                 <div class="flex space-x-4">
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
+                    <a href="https://github.com/Marzuk08/Ford-GoBike-System-Data-Analysis" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
                         <i data-feather="github" class="mr-2"></i> GitHub
                     </a>
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
+                    <a href="https://medium.com/@marzuk.sulemana/ford-gobike-system-data-analysis-e0f2acf26d63" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
                         <i data-feather="edit" class="mr-2"></i> Medium
                     </a>
                 </div>
@@ -73,33 +85,44 @@
     </section>
 
     <!-- Project Content -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <!-- Overview Section -->
-                <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                    <div class="prose prose-invert max-w-none">
-                        <p>This project involved the design and simulation of complex mechanical components for industrial machinery using SolidWorks. The goal was to create optimized designs that meet stringent performance requirements while reducing material usage and manufacturing costs.</p>
-                        <p>Key aspects included parametric modeling, finite element analysis (FEA), and creating detailed manufacturing drawings with GD&T specifications.</p>
-                    </div>
-                </div>
+<section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <!-- Overview Section -->
+            <div class="mb-20" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                <div class="prose prose-invert max-w-none">
+                  <!-- Medium Post Preview Card -->
+<blockquote class="embedly-card">
+  <h4>
+    <a href="https://medium.com/@marzuk.sulemana/ford-gobike-system-data-analysis-e0f2acf26d63">
+      Ford GoBike System Data Analysis
+    </a>
+  </h4>
+  <p>My analysis of bike-sharing system data to derive insights for better business decisions.</p>
+</blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js"></script>
+
+                    
+                                </div>
+            </div>
+
 
                 <!-- Gallery Section -->
                 <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Design Gallery</h2>
+                    <h2 class="text-3xl font-bold mb-6">Project Gallery</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/industry/1200x630/10" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Screenshot%202025-09-17%20160916.png" alt="SolidWorks Design" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/technology/1200x630/11" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project1pic3.png" alt="SolidWorks Design" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/workspace/1200x630/12" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project1pic4.png" alt="SolidWorks Design" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/construction/1200x630/13" alt="SolidWorks Design" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project1pic5.png" alt="SolidWorks Design" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -126,11 +149,11 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row md:justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
+                    <a href="index.html" class="text-2xl font-bold gradient-text">MS</a>
                     <p class="text-gray-400 mt-2">Bridging Materials Science and Data Engineering</p>
                 </div>
                 <div class="flex flex-col items-center md:items-end">
-                    <p class="text-gray-400">&copy; 2023 Alex's Portfolio. All rights reserved.</p>
+                    <p class="text-gray-400">&copy; 2025 Marzuk's Portfolio. All rights reserved.</p>
                     <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation</p>
                 </div>
             </div>
