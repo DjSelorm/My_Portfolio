@@ -30,21 +30,32 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-opaque">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
-                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
-                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="relative inline-block">
+                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
+                            </span>
+                        </span>
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                        <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                        <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                        <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                        <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                        <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
                 </div>
-                <button class="md:hidden focus:outline-none">
-                    <i data-feather="menu"></i>
-                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+
 
     <!-- Project Hero Section -->
     <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
@@ -53,69 +64,152 @@
                 <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
                     <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
                 </a>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">SolidWorks Design Project</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">Turning Superstore data into clear business insights through interactive dashboards</h1>
                 <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">SolidWorks</span>
-                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">CAD Design</span>
-                    <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Engineering</span>
+                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Excel</span>
+                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">Tableau</span>
+                    <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">SQL</span>
+                    
                 </div>
-                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Advanced mechanical component design and simulation using SolidWorks for industrial applications.</p>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Built a dashboard highlighting key KPIs and visual trends to track revenue, profit, and customer performance across categories and segments.</p>
+
                 <div class="flex space-x-4">
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
-                        <i data-feather="github" class="mr-2"></i> GitHub
-                    </a>
-                    <a href="#" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
-                        <i data-feather="edit" class="mr-2"></i> Medium
-                    </a>
+                                       
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Project Content -->
-    <section class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <!-- Overview Section -->
-                <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                    <div class="prose prose-invert max-w-none">
-                        <p>This project involved the design and simulation of complex mechanical components for industrial machinery using SolidWorks. The goal was to create optimized designs that meet stringent performance requirements while reducing material usage and manufacturing costs.</p>
-                        <p>Key aspects included parametric modeling, finite element analysis (FEA), and creating detailed manufacturing drawings with GD&T specifications.</p>
-                    </div>
-                </div>
+<section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <!-- Overview Section -->
+            <div class="mb-20" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">This project involved analyzing Superstore sales data from 2015 to 2018 using Tableau. The interactive dashboard highlights annual performance metrics, including profit, revenue, profit ratio, and order quantity. It also breaks down customer performance, monthly profit trends, segment-wise profitability, and category-level contributions, providing a comprehensive view of business performance.</p>
+                
+            </div>
 
-                <!-- Gallery Section -->
-                <div class="mb-20" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Design Gallery</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/industry/1200x630/10" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/technology/1200x630/11" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/workspace/1200x630/12" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="http://static.photos/construction/1200x630/13" alt="SolidWorks Design" class="w-full h-full object-cover">
-                        </div>
+<div data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Key Insights</h2>
+                    <div class="prose prose-invert max-w-none">
+                      <style>
+  .big-list li {
+    font-size: 20px;  /* Look like H1 */
+    
+  }
+</style>
+                        <l class="big-list">
+                            <li>Profits increased steadily from 2015 to 2018, with the highest profit observed in 2018.</li>
+                            <li>Technology contributed the most profit (~$145K), followed by Office Supplies (~$122K), while Furniture lagged behind (~$18K).</li>
+                            <li>Corporate and Consumer segments were more profitable compared to Home Office.</li>
+                            <li>Retention and YOY growth were stronger in Technology and Office Supplies than Furniture.</li>
+                            
+                        </ul>
+                        <h2 class="text-3xl font-bold mb-6"></h2>
+                        
+                        <h2 class="text-3xl font-bold mb-6">
+
+                        </h2>
                     </div>
-                </div>
+                    <br>
+                <!-- Gallery Section -->
+ <!-- Gallery + Image -->
+<div class="mb-20" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6">Project Gallery</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 place-items-center">
+    <div class="rounded-xl overflow-hidden flex justify-center items-center">
+      <img
+        src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Projects/Project4Pic1.png"
+        alt="Picture"
+        class="w-[250px] md:w-[400px] lg:w-[600px] h-auto object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+        onclick="openPopup(this)"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Popup Modal -->
+<div
+  id="popupModal"
+  class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50"
+  onclick="closePopup(event)"   <!-- overlay click -->
+>
+  <div class="relative p-4">
+    <button
+      id="popupCloseBtn"
+      onclick="closePopup()"
+      class="absolute top-2 right-2 text-white text-2xl font-bold focus:outline-none"
+      aria-label="Close image"
+    >&times;</button>
+
+    <img
+      id="popupImage"
+      src=""
+      alt="Expanded Image"
+      class="block max-w-[90vw] max-h-[80vh] rounded-lg shadow-lg cursor-pointer"
+      onclick="closePopup()"   <!-- image click closes -->
+    />
+  </div>
+</div>
+
+<script>
+  const popup = document.getElementById('popupModal');
+  const popupImg = document.getElementById('popupImage');
+  const closeBtn = document.getElementById('popupCloseBtn');
+
+  function openPopup(imgElement) {
+    popupImg.src = imgElement.src;
+    popup.classList.remove('hidden');
+    popup.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closePopup(event) {
+    // If event exists, check if it's overlay or just a direct call
+    if (!event || event.target === popup) {
+      popup.classList.remove('flex');
+      popup.classList.add('hidden');
+      popupImg.src = '';
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Close with ESC key
+  document.addEventListener('keydown', function (e) {
+    if (!popup.classList.contains('hidden') && (e.key === 'Escape' || e.keyCode === 27)) {
+      closePopup();
+    }
+  });
+</script>
+
+
+
+
 
                 <!-- Lessons Learned -->
                 <div data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Key Features</h2>
+                    <h2 class="text-3xl font-bold mb-6">What I learned</h2>
+                    
                     <div class="prose prose-invert max-w-none">
-                        <ul>
-                            <li>Parametric modeling for design flexibility</li>
-                            <li>Finite element analysis for stress testing</li>
-                            <li>Motion studies for kinematic analysis</li>
-                            <li>Detailed manufacturing drawings with GD&T</li>
-                            <li>Material optimization for cost reduction</li>
+                      <style>
+  .big-list li {
+    font-size: 20px;  /* Look like H1 */
+    
+  }
+</style>
+                        <l class="big-list" >
+                            <li>Enhanced proficiency in Tableau dashboard design, including KPIs, trend lines, and interactive filters.</li>
+                            <li>Learned how to effectively use visual storytelling to highlight revenue, profit distribution, and customer performance.</li>
+                            <li>Gained experience in balancing design and functionality, ensuring the dashboard is both insightful and easy to navigate.</li><li>
+                            Improved skills in segmenting data by categories and customer groups to uncover deeper business insights.
+                            </li>
+                            
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -126,11 +220,11 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row md:justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="text-2xl font-bold gradient-text">MSDS</a>
+                    <a href="index.html" class="text-2xl font-bold gradient-text">MS</a>
                     <p class="text-gray-400 mt-2">Bridging Materials Science and Data Engineering</p>
                 </div>
                 <div class="flex flex-col items-center md:items-end">
-                    <p class="text-gray-400">&copy; 2023 Alex's Portfolio. All rights reserved.</p>
+                    <p class="text-gray-400">&copy; 2025 Marzuk's Portfolio. All rights reserved.</p>
                     <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation</p>
                 </div>
             </div>
