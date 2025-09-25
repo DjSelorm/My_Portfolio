@@ -168,7 +168,7 @@
                         </li>
                         <li class="flex items-center">
                             <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Mechanical Testing & Analysis (Hardness, Tensile/compression testing)</span>
+                            <span>Mechanical Testing & Analysis (Hardness, Tensile/Compression testing)</span>
                         </li>
                         
                         <li class="flex items-center">
@@ -405,7 +405,7 @@ innovative solutions to material challenges.</li>
                         <div class="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
                         <h4 class="text-lg">Aya Data | Freelance | Remote</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Use V7 Darwin and CVAT to annotate images, videos, and texta with techniques like segmentation, bounding boxes, and tracking, ensuring high-quality datasets for machine learning.</p>
+                    <p class="text-gray-300 mb-4">Use V7 Darwin and CVAT to annotate images, videos, and text with techniques like segmentation, bounding boxes, and tracking, ensuring high-quality datasets for machine learning.</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-300">
                         <li>Utilize V7 Darwin and Computer Vision Annotation Tool (CVAT) for efficient data annotation, enhancing
 dataset quality for machine learning applications.</li>
@@ -574,7 +574,7 @@ smooth operations.</li>
                         </div>
                         <h3 class="text-xl font-bold">Finite Element Modelling, Simulation, 3-D Design and Printing and Electrochemical Testing Methods</h3>
                     </div>
-                    <p class="text-gray-300 mb-4">AMRS UG Chaapter Metrohm Workshop Certification</p>
+                    <p class="text-gray-300 mb-4">AMRS UG Chapter Metrohm Workshop Certification</p>
                     <div class="text-sm text-blue-400 mb-4">Issued: Feb 2020</div>
                     <a href="https://drive.google.com/drive/folders/15-0PzBKDw591nFi1aIHJk447JreImAfi" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
@@ -720,36 +720,43 @@ smooth operations.</li>
         });
         
         // Typing animation
-        const typingText = document.getElementById('typing-text');
-        const cursor = document.querySelector('.typing-cursor');
-        const text = "Hi, I'm Marzuk.";
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingSpeed = 150;
+const typingText = document.getElementById('typing-text');
+const cursor = document.querySelector('.typing-cursor');
+const fullText = "Hi, I'm Marzuk.";
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 150;
 
-        function type() {
-            const currentText = text.substring(0, charIndex);
-            typingText.textContent = currentText;
-            
-            if (!isDeleting && charIndex < text.length) {
-                charIndex++;
-                typingSpeed = 150;
-            } else if (isDeleting && charIndex > 0) {
-                charIndex--;
-                typingSpeed = 50;
-            }
-            
-            if (charIndex === text.length) {
-                isDeleting = true;
-                typingSpeed = 2000; // Pause at end
-                cursor.style.opacity = '1'; // Ensure cursor is visible at end
-            } else if (charIndex === 0 && isDeleting) {
-                isDeleting = false;
-                typingSpeed = 500; // Pause at start
-            }
-            
-            setTimeout(type, typingSpeed);
-        }
+function type() {
+    // Slice the text up to current index
+    const currentText = fullText.substring(0, charIndex);
+
+    // Highlight "Hi, I'm" in white while keeping the rest normal
+    const hiPart = currentText.substring(0, 7);   // "Hi, I'm"
+    const namePart = currentText.substring(7);    // " Marzuk."
+
+    typingText.innerHTML = `<span style="color:white;">${hiPart}</span>${namePart}`;
+    
+    if (!isDeleting && charIndex < fullText.length) {
+        charIndex++;
+        typingSpeed = 150;
+    } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        typingSpeed = 50;
+    }
+    
+    if (charIndex === fullText.length) {
+        isDeleting = true;
+        typingSpeed = 2000; // Pause at end
+        cursor.style.opacity = '1'; // Ensure cursor is visible at end
+    } else if (charIndex === 0 && isDeleting) {
+        isDeleting = false;
+        typingSpeed = 500; // Pause at start
+    }
+    
+    setTimeout(type, typingSpeed);
+}
+
 
         // Cursor blink effect
         function blinkCursor() {
