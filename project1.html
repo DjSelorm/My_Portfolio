@@ -53,20 +53,34 @@
                         <i data-feather="menu"></i>
                     </button>
                 </div>
-            </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-gray-800 shadow-lg py-4 px-6">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                        <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                        <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                        <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                        <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                        <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+                    </div>
+                </div>
+</div>
         </nav>
-
+    <!-- Spacer -->
+    <div class="h-16"></div>
 
     <!-- Project Hero Section -->
-    <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
-        <div class="container mx-auto h-full flex items-center px-6">
-            <div class="max-w-4xl">
-                <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
-                    <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
-                </a>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">Ford GoBike System Data Analysis</h1>
-                <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Python</span>
+    <section class="project-hero bg-gradient-to-br from-gray-800 to-gray-900 pt-20 md:pt-24">
+<div class="container mx-auto h-full flex items-center px-6">
+            <div class="max-w-4xl mt-12 md:mt-8">
+<div class="md:hidden mb-8 mt-24">
+                    <h1 class="text-4xl font-bold mb-6" data-aos="fade-up">Ford GoBike System Data Analysis</h1>
+                </div>
+<div class="hidden md:block">
+                    <h1 class="text-6xl font-bold mb-6" data-aos="fade-up">Ford GoBike System Data Analysis</h1>
+                </div>
+<div class="flex flex-wrap gap-4 mb-8">
+<span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Python</span>
                     <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">Pandas</span>
                     <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Matplotlib</span>
                 </div>
@@ -83,11 +97,13 @@
             </div>
         </div>
     </section>
+    
+    <!-- Spacer -->
+    <div class="py-16"></div>
 
     <!-- Project Content -->
-<section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
-    <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
+<section class="py-20 container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
             <!-- Overview Section -->
             <div class="mb-20" data-aos="fade-up">
                 <h2 class="text-3xl font-bold mb-6">Project Overview</h2><p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">The main feature I was interested in was the duration of members and how it depended on other data features. I focused on the dependency of duration on the age of the users, the user types (subscribers or customers), and member gender (male, female, other). </p>
@@ -176,11 +192,9 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
-    <footer class="bg-gray-900 py-10">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:justify-between items-center">
+    <footer class="bg-gray-900 py-10 container mx-auto px-6">
+<div class="flex flex-col md:flex-row md:justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <a href="index.html" class="text-2xl font-bold gradient-text">MS</a>
                     <p class="text-gray-400 mt-2">Bridging Materials Engineering and Data Science</p>
@@ -192,11 +206,35 @@
             </div>
         </div>
     </footer>
-
     <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                feather.replace();
+            } else {
+                icon.setAttribute('data-feather', 'x');
+                feather.replace();
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.setAttribute('data-feather', 'menu');
+                feather.replace();
+            });
+        });
+
         // Initialize animations
         AOS.init({
-            once: true,
+once: true,
             duration: 800
         });
         
