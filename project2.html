@@ -30,49 +30,58 @@
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navigation -->
-        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
-            <div class="container mx-auto px-6 py-4">
-                <div class="flex justify-between items-center">
-                    <a href="#" class="text-2xl font-bold">
-                        <span class="relative inline-block">
-                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
-                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
-                                <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
-                            </span>
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">
+                    <span class="relative inline-block">
+                        <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                        <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                            <span class="text-blue-400">M</span><span class="text-purple-400">S</span>
                         </span>
-                    </a>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
-                        <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
-                        <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
-                        <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
-                        <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
-                        <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
-                    </div>
-                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-
-    <!-- Project Hero Section -->
-    <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
-        <div class="container mx-auto h-full flex items-center px-6">
-            <div class="max-w-4xl">
-                <a href="index.html#projects" class="flex items-center text-gray-400 hover:text-blue-400 mb-6 transition">
-                    <i data-feather="arrow-left" class="mr-2"></i> Back to Projects
+                    </span>
                 </a>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">How I wrangle, analyze and visualize twitter user data: ‘We Rate Dogs’</h1>
-                <div class="flex flex-wrap gap-4 mb-8">
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                    <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-0 top-16 z-40 bg-gray-900">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Project Hero Section -->
+    <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-96 md:pt-64">
+<div class="container mx-auto h-full flex items-center px-6">
+            <div class="max-w-4xl">
+                                
+                                                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">How I wrangle, analyze and visualize twitter user data: ‘We Rate Dogs’</h1>
+<div class="flex flex-wrap gap-4 mb-8">
                     <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Python</span>
                     <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">Seaborn</span>
                     <span class="px-4 py-2 bg-green-900/30 text-green-300 rounded-full">Matplotlib</span>
                 </div>
                 <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">How I wrangled, analyzed and visualized Twitter user account ‘WeRateDogs’ that rates people's dogs with a humorous comment about the dog. </p>
-
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 mb-12 md:mb-0">
                     <a href="https://github.com/Marzuk08/Wrangling-And-Analyze-Data" class="px-6 py-3 bg-gray-700 rounded-full font-medium hover:bg-gray-600 transition flex items-center">
                         <i data-feather="github" class="mr-2"></i> GitHub
                     </a>
@@ -83,6 +92,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Mobile Spacer -->
+    <div class="md:hidden py-12"></div>
 
     <!-- Project Content -->
 <section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
