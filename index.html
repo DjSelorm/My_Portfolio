@@ -724,7 +724,7 @@ smooth operations.</li>
         // Typing animation
 const typingText = document.getElementById('typing-text');
 const cursor = document.querySelector('.typing-cursor');
-const fullText = "Hi, I'm Marzuk.";
+const fullText = "Hi, I'm Selorm.";
 let charIndex = 0;
 let isDeleting = false;
 let typingSpeed = 150;
@@ -735,7 +735,7 @@ function type() {
 
     // Highlight "Hi, I'm" in white while keeping the rest normal
     const hiPart = currentText.substring(0, 7);   // "Hi, I'm"
-    const namePart = currentText.substring(7);    // " Marzuk."
+    const namePart = currentText.substring(7);    // " Selorm."
 
     typingText.innerHTML = `<span style="color:white;">${hiPart}</span>${namePart}`;
     
@@ -802,5 +802,6 @@ function type() {
     </script>
 </body>
 </html>
+
 
 
