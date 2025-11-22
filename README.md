@@ -48,9 +48,9 @@ Here are some selected projects featured in my portfolio:
 If you’d like to connect or collaborate, reach me at:  
 
 - 📧 **Email:** djonathanselorm@proton.me  
-- 📝 **Medium:** [@Jonathan.SelormD]((https://medium.com/@djonathanselorm))  
+- 📝 **Medium:** [@Jonathan.SelormD](https://medium.com/@djonathanselorm)  
 - 💼 **LinkedIn:** [Jonathan Selorm D.](www.linkedin.com/in/jonathan-selorm)  
-- 🐙 **GitHub:** [@DjSelorm]((https://github.com/DjSelorm/My-Python-Data-Analysis-Portfolio))  
+- 🐙 **GitHub:** [@DjSelorm](https://github.com/DjSelorm/My-Python-Data-Analysis-Portfolio) 
 
 ---
 
