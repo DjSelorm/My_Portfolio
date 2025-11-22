@@ -1,4 +1,4 @@
-# 🌐 Marzuk Sulemana – Portfolio Website 
+# 🌐 Jonathan Selorm Degbedzui – Portfolio Website 
 Check out my [portfolio website](https://DjSelorm.github.io/My_Portfolio).
 
 
