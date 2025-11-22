@@ -1,5 +1,5 @@
 # 🌐 Marzuk Sulemana – Portfolio Website 
-Check out my [portfolio website](https://marzuk08.github.io/Portfolio).
+Check out my [portfolio website](https://DjSelorm.github.io/My_Portfolio).
 
 
 Welcome to my portfolio repository!  
@@ -25,20 +25,20 @@ My portfolio highlights:
 ---
 
 ## 📂 Featured Projects
-Here are some projects featured in my portfolio:
+Here are some selected projects featured in my portfolio:
 
-### 📊 [Ford GoBike System Data Analysis](https://github.com/Marzuk08/Ford-GoBike-System-Data-Analysis)
-- Analyzed bike-sharing system data to uncover customer usage trends.  
-- Tools: **Python, Pandas, Matplotlib**  
-- Shared insights on **[Medium](https://medium.com/@marzuk.sulemana/ford-gobike-system-data-analysis-e0f2acf26d63)**.  
+### 🩺 Medical Examination Data Analysis
+- Visualised and analysed medical exam data to explore relationships between cardiac disease, body measurements, blood markers, and lifestyle choices.
+- Tools: Python, Pandas, Matplotlib, Seaborn
+- Performed calculations and created insightful visualisations to uncover health trends.
 
-### 🛒 Annual Performance of Superstore Data
-- Built an interactive dashboard analyzing yearly performance KPIs.  
-- Metrics: **Profit, Revenue, Profit Ratio**  
-- Visuals: YOY customer growth, category performance, monthly profit trends.  
+### 🏪 Google Play Store Apps Data
+- Built an interactive dashboard analysing review data from users.  
+- Metrics: ** highest reviews, best-rated apps, sentiment score analysis**  
+- Visuals: highly reviewed app, best-rated apps(tooltip), sentiment score distribution.  
 
 ### 🛠️ SolidWorks Mechanical Desk Design
-- Designed and simulated a **mechanical desk** using SolidWorks.  
+- Designed and simulated a **mechanical desk**, etc  using SolidWorks.  
 - Applied **static FEA simulations** to test load conditions.  
 - Focused on **parametric modeling, optimization, and manufacturing drawings**.  
 
@@ -47,10 +47,10 @@ Here are some projects featured in my portfolio:
 ## 📫 Contact
 If you’d like to connect or collaborate, reach me at:  
 
-- 📧 **Email:** nimos123@proton.me  
-- 📝 **Medium:** [@marzuk.sulemana](https://medium.com/@marzuk.sulemana)  
+- 📧 **Email:** djonathanselorm@proton.me  
+- 📝 **Medium:** [@Jonathan.SelormD]((https://medium.com/@djonathanselorm))  
 - 💼 **LinkedIn:** [linkedin.com/in/marzuk-sulemana](https://linkedin.com/in/marzuk-sulemana)  
-- 🐙 **GitHub:** [@Marzuk08](https://github.com/Marzuk08)  
+- 🐙 **GitHub:** [@DjSelorm]((https://github.com/DjSelorm/My-Python-Data-Analysis-Portfolio))  
 
 ---
 
