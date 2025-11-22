@@ -49,7 +49,7 @@ If you’d like to connect or collaborate, reach me at:
 
 - 📧 **Email:** djonathanselorm@proton.me  
 - 📝 **Medium:** [@Jonathan.SelormD]((https://medium.com/@djonathanselorm))  
-- 💼 **LinkedIn:** (www.linkedin.com/in/jonathan-selorm)  
+- 💼 **LinkedIn:** [Jonathan Selorm D.](www.linkedin.com/in/jonathan-selorm)  
 - 🐙 **GitHub:** [@DjSelorm]((https://github.com/DjSelorm/My-Python-Data-Analysis-Portfolio))  
 
 ---
