@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolidWorks Project | MSDS Portfolio</title>
+    <title>Superstore Data Analysis | MSDS Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -26,36 +26,45 @@
         .nav-opaque {
             background-color: rgba(17, 24, 39, 1);
         }
+        .big-list li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .tableau-container {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            margin: 40px 0;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
     <!-- Navigation -->
-        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
-            <div class="container mx-auto px-6 py-4">
-                <div class="flex justify-between items-center">
-                    <a href="#" class="text-2xl font-bold">
-                        <span class="relative inline-block">
-                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
-                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
-                                <span class="text-blue-400">D</span><span class="text-purple-400">J</span>
-                            </span>
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">
+                    <span class="relative inline-block">
+                        <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
+                        <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
+                            <span class="text-blue-400">D</span><span class="text-purple-400">J</span>
                         </span>
-                    </a>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
-                        <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
-                        <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
-                        <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
-                        <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
-                        <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
-                    </div>
-                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
+                    </span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="index.html#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <a href="index.html#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="index.html#experience" class="hover:text-blue-400 transition">Experience</a>
+                    <a href="index.html#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                    <a href="index.html#contact" class="hover:text-blue-400 transition">Contact</a>
                 </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
             </div>
-        </nav>
-
+        </div>
+    </nav>
 
     <!-- Project Hero Section -->
     <section class="project-hero w-full bg-gradient-to-br from-gray-800 to-gray-900 pt-20">
@@ -69,212 +78,118 @@
                     <span class="px-4 py-2 bg-blue-900/30 text-blue-300 rounded-full">Excel</span>
                     <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">Tableau</span>
                     <span class="px-4 py-2 bg-purple-900/30 text-purple-300 rounded-full">SQL</span>
-                    
                 </div>
                 <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Built a dashboard highlighting key KPIs and visual trends to track revenue, profit, and customer performance across categories and segments.</p>
-
-                <div class="flex space-x-4">
-                                       
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Project Content -->
-<section class="py-20 mt-20">  <!-- added mt-20 for extra spacing -->
-    <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-            <!-- Overview Section -->
-            <div class="mb-20" data-aos="fade-up">
-                <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
-                <p class="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">This project involved analyzing Superstore sales data from 2015 to 2018 using Tableau. The interactive dashboard highlights annual performance metrics, including profit, revenue, & profit ratio. It also breaks down customer performance, monthly profit trends, segment-wise profitability, and category-level contributions, providing a comprehensive view of business performance.</p>
-                <h2 class="text-3xl font-bold mb-6">Interactive Dashboard</h2>
-                <!-- Fullscreen Dashboard Section -->
-<section id="dashboard" class="w-full h-screen m-0 p-0">
-  
-    <div class='tableauPlaceholder' id='viz1764546407953' style='position: relative'>
-        <noscript>
-            #
-                <img alt='EXECUTIVE KPI DASHBOARD(2015 - 2018)' 
-                     src='https://public.tableau.com/static/images/PR/PRS59BNNT/1_rss.png' 
-                     style=' name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='path' value='views/superstoredash_17645407061340/Dashboard1?:language=en-GB&amp;:embed=true&amp;:sid=&amp;:redirect=auth' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https://public.tableau.com/static/images/PR/PRS59BNNT/1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-GB' />
-        </object>
-    </div>
-    
-    <script type='text/javascript'>
-        var divElement = document.getElementById('viz1764546407953');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) {
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        {
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-        } else {
-            vizElement.style.width = '100%';
-            vizElement.style.height = '2177px';
-        }
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-</section>
-
-<script type="text/javascript">
-  var divElement = document.getElementById('vizDashboard');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-
-  // Force fullscreen responsive
-  vizElement.style.width = "100%";
-  vizElement.style.height = "100%";
-
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-
-<!-- Tableau Dashboard Button -->
-<div class="text-center my-10">
-  <a href="https://public.tableau.com/views/superstoredash_17645407061340/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
-     target="_blank" 
-     class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-    View Dashboard
-  </a>
-</div>
-
-
-                
-            </div>
-
-<div data-aos="fade-up">
-                    <h2 class="text-3xl font-bold mb-6">Key Insights</h2>
-                    <div class="prose prose-invert max-w-none">
-                      <style>
-  .big-list li {
-    font-size: 20px;  /* Look like H1 */
-    
-  }
-</style>
-                        <l class="big-list">
-                            <li>Profits increased steadily from 2015 to 2018, with the highest profit observed in 2018.</li>
-                            <li>Technology contributed the most profit (~$145K), followed by Office Supplies, while Furniture lagged.</li>
-                            <li>Corporate and Consumer segments were more profitable compared to Home Office.</li>
-                            <li>Retention and YOY growth were stronger in Technology than in Office Supplies and Furniture.</li>
-                            
-                        </ul>
-                        <h2 class="text-3xl font-bold mb-6"></h2>
-                        
-                        <h2 class="text-3xl font-bold mb-6">
-
-                        </h2>
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Overview Section -->
+                <div class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                    <p class="text-xl text-gray-300 mb-8">This project involved analyzing Superstore sales data from 2015 to 2018 using Tableau. The interactive dashboard highlights annual performance metrics, including profit, revenue, & profit ratio. It also breaks down customer performance, monthly profit trends, segment-wise profitability, and category-level contributions, providing a comprehensive view of business performance.</p>
+                    
+                    <h2 class="text-3xl font-bold mb-6">Interactive Dashboard</h2>
+                    
+                    <!-- Tableau Dashboard Section -->
+                    <div class="tableau-container">
+                        <div class='tableauPlaceholder' id='viz1764546407953' style='position: relative; width: 100%; height: 100%;'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='EXECUTIVE KPI DASHBOARD(2015 - 2018)' 
+                                         src='https://public.tableau.com/static/images/PR/PRS59BNNT/1_rss.png' 
+                                         style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='path' value='views/superstoredash_17645407061340/Dashboard1?:language=en-GB&amp;:embed=true&amp;:sid=&amp;:redirect=auth' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https://public.tableau.com/static/images/PR/PRS59BNNT/1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-GB' />
+                            </object>
+                        </div>
                     </div>
-                    <br>
+                    
+                    <!-- Tableau Dashboard Button -->
+                    <div class="text-center my-10">
+                        <a href="https://public.tableau.com/views/superstoredash_17645407061340/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+                           target="_blank" 
+                           class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                            View Dashboard
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Key Insights Section -->
+                <div data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Key Insights</h2>
+                    <ul class="big-list">
+                        <li>Profits increased steadily from 2015 to 2018, with the highest profit observed in 2018.</li>
+                        <li>Technology contributed the most profit (~$145K), followed by Office Supplies, while Furniture lagged.</li>
+                        <li>Corporate and Consumer segments were more profitable compared to Home Office.</li>
+                        <li>Retention and YOY growth were stronger in Technology than in Office Supplies and Furniture.</li>
+                    </ul>
+                </div>
+
                 <!-- Gallery Section -->
- <!-- Gallery + Image -->
-<div class="mb-20" data-aos="fade-up">
-  <h2 class="text-3xl font-bold mb-6">Project Gallery</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 place-items-center">
-    <div class="rounded-xl overflow-hidden flex justify-center items-center">
-      <img
-        src="https://github.com/DjSelorm/My_Portfolio/blob/main/dashboard.png"
-        alt="Picture"
-        class="w-[250px] md:w-[400px] lg:w-[600px] h-auto object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
-        onclick="openPopup(this)"
-      />
-    </div>
-  </div>
-</div>
+                <div class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-6">Project Gallery</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 place-items-center">
+                        <div class="rounded-xl overflow-hidden flex justify-center items-center">
+                            <img
+                                src="https://github.com/DjSelorm/My_Portfolio/blob/main/dashboard.png"
+                                alt="Picture"
+                                class="w-[250px] md:w-[400px] lg:w-[600px] h-auto object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+                                onclick="openPopup(this)"
+                            />
+                        </div>
+                    </div>
+                </div>
 
-<!-- Popup Modal -->
-<div
-  id="popupModal"
-  class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50"
-  onclick="closePopup(event)"   <!-- overlay click -->
->
-  <div class="relative p-4">
-    <button
-      id="popupCloseBtn"
-      onclick="closePopup()"
-      class="absolute top-2 right-2 text-white text-2xl font-bold focus:outline-none"
-      aria-label="Close image"
-    >&times;</button>
+                <!-- Popup Modal -->
+                <div
+                    id="popupModal"
+                    class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50"
+                    onclick="closePopup(event)"
+                >
+                    <div class="relative p-4">
+                        <button
+                            id="popupCloseBtn"
+                            onclick="closePopup()"
+                            class="absolute top-2 right-2 text-white text-2xl font-bold focus:outline-none"
+                            aria-label="Close image"
+                        >&times;</button>
 
-    <img
-      id="popupImage"
-      src=""
-      alt="Expanded Image"
-      class="block max-w-[90vw] max-h-[80vh] rounded-lg shadow-lg cursor-pointer"
-      onclick="closePopup()"   <!-- image click closes -->
-    />
-  </div>
-</div>
-
-<script>
-  const popup = document.getElementById('popupModal');
-  const popupImg = document.getElementById('popupImage');
-  const closeBtn = document.getElementById('popupCloseBtn');
-
-  function openPopup(imgElement) {
-    popupImg.src = imgElement.src;
-    popup.classList.remove('hidden');
-    popup.classList.add('flex');
-    document.body.style.overflow = 'hidden';
-    closeBtn.focus();
-  }
-
-  function closePopup(event) {
-    // If event exists, check if it's overlay or just a direct call
-    if (!event || event.target === popup) {
-      popup.classList.remove('flex');
-      popup.classList.add('hidden');
-      popupImg.src = '';
-      document.body.style.overflow = '';
-    }
-  }
-
-  // Close with ESC key
-  document.addEventListener('keydown', function (e) {
-    if (!popup.classList.contains('hidden') && (e.key === 'Escape' || e.keyCode === 27)) {
-      closePopup();
-    }
-  });
-</script>
-
-
-
-
+                        <img
+                            id="popupImage"
+                            src=""
+                            alt="Expanded Image"
+                            class="block max-w-[90vw] max-h-[80vh] rounded-lg shadow-lg cursor-pointer"
+                            onclick="closePopup()"
+                        />
+                    </div>
+                </div>
 
                 <!-- Lessons Learned -->
                 <div data-aos="fade-up">
                     <h2 class="text-3xl font-bold mb-6">What I learned</h2>
-                    
-                    <div class="prose prose-invert max-w-none">
-                      <style>
-  .big-list li {
-    font-size: 20px;  /* Look like H1 */
-    
-  }
-</style>
-                        <l class="big-list" >
-                            <li>Enhanced proficiency in Tableau dashboard design, including KPIs, trend lines, and interactive filters.</li>
-                            <li>Learned how to effectively use visual storytelling to highlight revenue, profit distribution, and customer performance.</li>
-                            <li>Gained experience in balancing design and functionality, ensuring the dashboard is both insightful and easy to navigate.</li><li>
-                            Improved skills in segmenting data by categories and customer groups to uncover deeper business insights.
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    
+                    <ul class="big-list">
+                        <li>Enhanced proficiency in Tableau dashboard design, including KPIs, trend lines, and interactive filters.</li>
+                        <li>Learned how to effectively use visual storytelling to highlight revenue, profit distribution, and customer performance.</li>
+                        <li>Gained experience in balancing design and functionality, ensuring the dashboard is both insightful and easy to navigate.</li>
+                        <li>Improved skills in segmenting data by categories and customer groups to uncover deeper business insights.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -317,9 +232,52 @@
                 navbar.classList.remove('nav-opaque');
             }
         });
+
+        // Tableau embed script
+        var divElement = document.getElementById('viz1764546407953');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '2177px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        // Popup modal functions
+        const popup = document.getElementById('popupModal');
+        const popupImg = document.getElementById('popupImage');
+        const closeBtn = document.getElementById('popupCloseBtn');
+
+        function openPopup(imgElement) {
+            popupImg.src = imgElement.src;
+            popup.classList.remove('hidden');
+            popup.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            closeBtn.focus();
+        }
+
+        function closePopup(event) {
+            if (!event || event.target === popup) {
+                popup.classList.remove('flex');
+                popup.classList.add('hidden');
+                popupImg.src = '';
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close with ESC key
+        document.addEventListener('keydown', function (e) {
+            if (!popup.classList.contains('hidden') && (e.key === 'Escape' || e.keyCode === 27)) {
+                closePopup();
+            }
+        });
     </script>
 </body>
 </html>
-
-
-
