@@ -1,876 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materials Science & Data Science Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <style>
-        .typing-cursor {
-            display: inline-block;
-            width: 3px;
-            height: 1.2em;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            margin-left: 2px;
-            animation: blink 1s infinite;
-            vertical-align: text-bottom;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .gradient-text {
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .hero-section {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
-        .nav-transparent {
-            background-color: rgba(17, 24, 39, 0.5);
-            backdrop-filter: blur(10px);
-        }
-        .nav-opaque {
-            background-color: rgba(17, 24, 39, 1);
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-    </style>
-</head>
-<body class="bg-gray-900 text-gray-100 font-sans">
-<div id="vanta-bg" class="hero-section w-full">
-        <!-- Navigation -->
-        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent">
-            <div class="container mx-auto px-6 py-4">
-                <div class="flex justify-between items-center">
-                    <a href="#" class="text-2xl font-bold">
-                        <span class="relative inline-block">
-                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
-                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
-                                <span class="text-blue-400">D</span><span class="text-purple-400">J</span>
-                            </span>
-                        </span>
-                    </a>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="#about" class="hover:text-blue-400 transition">About</a>
-                        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
-                        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
-                        <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
-                        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Featured Projects</h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1: Turning Superstore data into clear business insights -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Screenshot%202025-09-16%20201359.png" alt="Superstore Dashboard" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center mr-3">
+                            <i data-feather="pie-chart" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Turning Superstore data into clear business insights through interactive dashboards</h3>
                     </div>
-                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
+                    <p class="text-gray-300 mb-4">Built a dashboard highlighting key insights and visual trends to track performance across categories and segments.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Excel</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Tableau</span>
+                        <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">SQL</span>
+                    </div>
+                    <a href="project4.html" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <div class="container mx-auto h-full flex items-center px-6">
-            <div class="flex flex-col md:flex-row items-center w-full">
-                <div class="max-w-2xl md:mr-16" data-aos="fade-right">
-                    <h1 class="text-5xl md:text-7xl font-bold mb-4">
-                        <span id="typing-text" class="gradient-text"></span>
-                        <span class="typing-cursor">|</span>
-                    </h1>
-                    <h2 class="text-2xl md:text-3xl mb-6">Materials Engineer & Data Scientist</h2>
-                    <p class="text-lg mb-8 text-gray-300">Engineering sustainable materials, powered by both computational and experimental data.</p>
-                    <div class="flex space-x-4">
-                        <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition">View My Work</a>
-                        <a href="#contact" class="px-6 py-3 border border-gray-600 rounded-full font-medium hover:bg-gray-800 transition">Contact Me</a>
-                    </div>
+            
+            <!-- Project 2: House Price Prediction Using Machine Learning -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://www.appliedaicourse.com/blog/wp-content/uploads/2025/01/House-Price-Prediction-Using-Machine-Learning.png" alt="House Price Prediction" class="w-full h-full object-cover">
                 </div>
-                <div class="hidden md:block relative w-64 h-64 mt-10 md:mt-0" data-aos="fade-left">
-                    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 blur-lg opacity-30"></div>
-                    <img src="https://raw.githubusercontent.com/DjSelorm/My_Portfolio/refs/heads/main/jona.jpeg" alt="Alex" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
+                            <i data-feather="box" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">House Price Prediction Using Machine Learning.</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">In this project, I created and submitted predictions for a Kaggle competition. Then, improved the model by adding features to apply what I've learned to move up the leaderboard.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Matplotlib</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Pandas</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Kaggle notebook</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">scikit-learn</span>
+                    </div>
+                    <a href="https://www.kaggle.com/code/jonsed/exercise-machine-learning-competitions" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Project 3: Data-driven solutions for Manufacturing Process challenges -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2024/10/1-min-9.jpg.webp" alt="Manufacturing Process" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
+                            <i data-feather="box" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Data-driven solutions for Manufacturing Process challenges</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">In this project, I explore Statistical Process Control (SPC), a method that uses data to keep production within limits [The Upper Control Limit (UCL) and Lower Control Limit (LCL)].</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Matplotlib</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Google Colab notebook</span>
+                    </div>
+                    <a href="https://colab.research.google.com/drive/171xIdGHkwf7VlPeRGH51IlK8vAW5BWeS?usp=sharing" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Project 4: What Drives Google PlayStore Apps Ratings? -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.ctfassets.net/vfkpgemp7ek3/83563764/860fa849fefb7406f5f2328264eb4eb7/google-play-number-one-apps.jpg?" alt="Google PlayStore" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center mr-3">
+                            <i data-feather="eye" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">What Drives Google PlayStore Apps Ratings? A Data-Driven Analysis.</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">I wrangled, analyzed and visualized review data obtained from screening Google App store for user reviews.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Tableau</span>
+                        <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Pandas</span>
+                    </div>
+                    <a href="https://public.tableau.com/views/appstoreinsight/APPSTOREDASH?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Project 5: Medical Data Visualizer & Analysis -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="600">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://demigos.com/media/blog/upload/2021/07/13/381.png" alt="Medical Data Analysis" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mr-3">
+                            <i data-feather="bar-chart-2" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Medical Data Visualizer & Analysis</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">This dataset contains medical examination data from patients. I explored the relationships between cardiac disease, body measurements, blood markers, and lifestyle choices to uncover key health insights and risk factors.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Pandas</span>
+                        <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Matplotlib</span>
+                        <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Seaborn</span>
+                    </div>
+                    <a href="https://github.com/DjSelorm/boilerplate-medical-data-visualizer/tree/main" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Project 6: BigQuery Public Data Analysis with SQL -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="700">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*wJ18DgYgtsscG63Sn56Oyw.png" alt="BigQuery Analysis" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
+                            <i data-feather="box" class="text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">BigQuery Public Data Analysis with SQL</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">This project utilizes advanced SQL techniques for analyzing data using the GitHub Repos dataset hosted in Google Cloud via BigQuery, SQL and from Python. The analysis focuses on understanding commit patterns and programming language usage across GitHub repositories.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Google Cloud</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Kaggle Notebook</span>
+                    </div>
+                    <a href="https://www.kaggle.com/code/jonsed/exercise-nested-and-repeated-data" class="text-blue-400 hover:text-blue-300 flex items-center">
+                        Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">About Me</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
-                    <div class="relative w-64 h-64 mx-auto">
-                        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 blur-lg opacity-30"></div>
-                        <img src="https://raw.githubusercontent.com/DjSelorm/My_Portfolio/refs/heads/main/jona2.jpg" alt="Profile" class="relative rounded-full w-full h-full object-cover border-4 border-gray-700">
-                    </div>
-                </div>
-                <div class="md:w-2/3 md:pl-16" data-aos="fade-left" data-aos-delay="200">
-                    <p class="text-lg mb-6">"Passionate about engineering sustainable materials by bridging advanced data science with hands-on experimental research.</p>
-                    <p class="text-lg mb-6">My unique combination of skills allows me to develop data-driven approaches to materials synthesis, characterization, failure analysis, and process optimization.</p>
-                    <p class="text-lg mb-8">I thrive at the intersection of experimental science and computational methods, bringing a quantitative perspective to materials research and development.</p>
-                    <p class="text-lg mb-8">Interest: Additive manufacturing, Sintering, Nanomaterial synthesis, ML for MSE, Energy storage materials, Semiconductors.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center">
-                            <i data-feather="map-pin" class="mr-2 text-blue-400"></i>
-                            <span>Accra, Ghana</span>
-                            <span> & Trento, Italy</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-feather="briefcase" class="mr-2 text-purple-400"></i>
-                            <span>2+ Years Experience</span>
-                        </div>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i data-feather="award" class="mr-2 text-green-600"></i>
-                                <span> Materials Engineering Graduate student(2022 - to date)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-feather="award" class="mr-2 text-green-600"></i>
-                                <span>BSc. in Materials Science and Engineering (2016 - 2020)</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Technical Skills</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Materials Science Skills -->
-                <div class="bg-gray-800 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-blue-900/30 mr-4">
-                            <i data-feather="layers" class="text-blue-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Materials Science</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Microstructural Characterisation (SEM, EDX, TGA, DSC, XRD, FTIR, BET/BJH, mercury intrusion)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Mechanical Testing & Analysis (Hardness/Nano-indentation, Tensile/Compression testing)</span>
-                        </li>
-                        
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Laboratory & Experimental Skills (Sample preparation, Nanomaterial synthesis, Pyrolysis, Sintering, Additive manufacturing)</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Data Science Skills -->
-                <div class="bg-gray-800 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                            <i data-feather="database" class="text-purple-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Data Science</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Python (Pandas, NumPy, Scikit-learn)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Machine Learning (Supervised & Unsupervised)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Data Visualization (Matplotlib, Seaborn, Plotly, Tableau)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Statistical Analysis</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>SQL</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Engineering Skills -->
-                <div class="bg-gray-800 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-green-900/30 mr-4">
-                            <i data-feather="cpu" class="text-green-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Engineering Tools</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span></span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Computational Materials Science (Materials Studio*)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Process Simulation (*)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>CAD (SolidWorks)</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-feather="check" class="mr-2 text-green-400"></i>
-                            <span>Data Visualization (Origin)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Featured Projects</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://demigos.com/media/blog/upload/2021/07/13/381.png" alt="Machine Learning for Materials" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mr-3">
-                                <i data-feather="bar-chart-2" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Medical Data Visualizer & Analysis</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4">This dataset contains medical examination data from patients. I explored the relationships between cardiac disease, body measurements, blood markers, and lifestyle choices to uncover key health insights and risk factors.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Pandas</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Matplotlib </span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">Seaborn</span>
-                        </div>
-                        <a href="https://github.com/DjSelorm/boilerplate-medical-data-visualizer/tree/main" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.ctfassets.net/vfkpgemp7ek3/83563764/860fa849fefb7406f5f2328264eb4eb7/google-play-number-one-apps.jpg?" alt="Automated Characterization" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center mr-3">
-                                <i data-feather="eye" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">What Drives Google PlayStore Apps Ratings? A Data-Driven Analysis.</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4">I wrangled, analyzed and visualized review data obtained from screening Google App store for user reviews.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Tableau</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm"> Pandas</span>
-                        </div>
-                        <a href="https://public.tableau.com/views/appstoreinsight/APPSTOREDASH?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2024/10/1-min-9.jpg.webp" alt="Failure Analysis" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
-                                <i data-feather="box" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Data-driven solutions for Manufacturing Process challenges</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4"> In this project, I explore Statistical Process Control (SPC), a method that uses data to keep production within limits [The Upper Control Limit (UCL) and Lower Control Limit (LCL)].</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Matplotlib</span>
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">SQL</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm"> Google Colab notebook</span>
-                            
-                        </div>
-                        <a href="https://colab.research.google.com/drive/171xIdGHkwf7VlPeRGH51IlK8vAW5BWeS?usp=sharing" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="500">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Marzuk08/Portfolio/refs/heads/main/Screenshot%202025-09-16%20201359.png" alt="Materials Database" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center mr-3">
-                                <i data-feather="pie-chart" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Turning Superstore data into clear business insights through interactive dashboards</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4">Built a dashboard highlighting key insights and visual trends to track performance across categories and segments.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Excel</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Tableau</span>
-                            <span class="px-3 py-1 bg-green-900/30 text-green-300 rounded-full text-sm">SQL</span>
-                        </div>
-                        <a href="project4.html" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-        
-                <!-- Project 5 - FIXED -->
-                <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*wJ18DgYgtsscG63Sn56Oyw.png" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
-                                <i data-feather="box" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">BigQuery Public Data Analysis with SQL</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4">This project utilizes advanced SQL techniques for analyzing data using the GitHub Repos dataset hosted in Google Cloud via BigQuery, SQL and from Python. The analysis focuses on understanding commit patterns and programming language usage across GitHub repositories.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Google Cloud</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">SQL</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm">Kaggle Notebook</span>
-                        </div>
-                        <a href="https://www.kaggle.com/code/jonsed/exercise-nested-and-repeated-data" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-                
-
-                <!-- Project 6-->
-         <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://www.appliedaicourse.com/blog/wp-content/uploads/2025/01/House-Price-Prediction-Using-Machine-Learning.png" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center mr-3">
-                                <i data-feather="box" class="text-white"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">House Price Prediction Using Machine Learning.</h3>
-                        </div>
-                        <p class="text-gray-300 mb-4"> In this project, I created and submitted predictions for a Kaggle competition. Then, improved the model by adding features to apply what I've learned to move up the leaderboard..</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Matplotlib</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm"> Pandas</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm"> Kaggle notebook</span>
-                            <span class="px-3 py-1 bg-purple-900/30 text-purple-300 rounded-full text-sm"> scikit-learn</span>
-                        </div>
-                        <a href="https://www.kaggle.com/code/jonsed/exercise-machine-learning-competitions" class="text-blue-400 hover:text-blue-300 flex items-center">
-                            Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Work Experience</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="max-w-5xl mx-auto">
-<!-- Experience 1 -->
-                <div class="mb-12" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-2xl font-bold">Research Intern</h3>
-                        <div class="text-blue-400 mt-2 md:mt-0">Oct. 2024 - May, 2025</div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-4 h-4 rounded-full bg-purple-500 mr-3"></div>
-                        <h4 class="text-lg">Glass-Ceramics Lab | Industrial Engineering Department, University of Trento, Italy.</h4>
-                    </div>
-                        <p class="text-gray-300 mb-4 text-lg">Conduct research on Cold sintering (CS) vs conventional sintering of carbonate rock powders.</p>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-300 text-lg">
-<li>Collaborate with research team to characterise the ceramics using SEM, FTIR, EDX, pycnometer and Archimedes' method,
-enhancing the understanding of ceramic materials' properties and behaviour for energy storage.</li>
-                        <li>Engage in collaborative research efforts, participating in discussions and brainstorming sessions to develop
-innovative solutions to material challenges.</li>
-                        <li>Manuscript under review at a reputable Q1 peer-reviewed journal for publication.</li>
-                    </ul>
-                </div>
-                
-                <!-- Experience 2 -->
-                <div class="mb-12" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-2xl font-bold">Graduate Student</h3>
-                        <div class="text-blue-400 mt-2 md:mt-0">Nov. 2024 - Present</div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-4 h-4 rounded-full bg-blue-500 mr-3"></div>
-                        <h4 class="text-lg">Msc. Materials Engineering | University of Trento</h4>
-                    </div>
-                        <p class="text-gray-300 mb-4 text-lg">Thesis Topic: Additive Manufacturing of Dense Polymer-Derived SiOC Ceramics.</p>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-300 text-lg">
-<li>Developed 3D-printed scaffolds from polymer precursors and conducted pyrolysis in a controlled atmosphere.</li>
-                        <li>Conducted comprehensive characterisation using TGA, XRD, SEM, EDX, FTIR, BET/BJH, mechanical testing, and nanoindentation to understand microstructure-property relationships.</li>
-                        <li>Peer-reviewed publication in Open Ceramics.(https://doi.org/10.1016/j.oceram.2025.100839).</li>
-                    </ul>
-                </div>
-                
-                <!-- Experience 3 -->
-                <div class="mb-12" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-2xl font-bold">Teaching and Research Assistant</h3>
-                        <div class="text-blue-400 mt-2 md:mt-0">Sept. 2020 - Aug. 2022</div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-4 h-4 rounded-full bg-green-500 mr-3"></div>
-                        <h4 class="text-lg"> Materials Science and Engineering | University of Ghana.</h4>
-                    </div>
-                        <p class="text-gray-300 mb-4 text-lg">Helped with the implementation and assessment of assigned projects and programs. </p>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-300 text-lg">
-<li>Conducted research under faculty supervision, analysing the physical and chemical
-properties of locally manufactured steel rebars to assess quality, performance, and
-industry compliance.</li>
-                        <li>Supervised examinations, laboratory sessions, grade reports and assignments.</li>
-                        
-                    </ul>
-                </div>
-
-                <!-- Experience 4 -->
-                <div class="mb-12" data-aos="fade-up" data-aos-delay="500">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-2xl font-bold">Research Intern</h3>
-                        <div class="text-blue-400 mt-2 md:mt-0">Jun. 2019 - Jul. 2019</div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-4 h-4 rounded-full bg-yellow-500 mr-3"></div>
-                        <h4 class="text-lg">Materials Science and Engineering Lab | University of Ghana</h4>
-                    </div>
-                        <p class="text-gray-300 mb-4 text-lg">Maintained lab operations and supported a crystallization experiment on waste polymers, performing material characterizations including compressive, tensile, and hardness tests.
-</p>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-300 text-lg">
-<li>Supported daily laboratory operations by maintaining equipment and ensuring accurate sample processing.</li>
-                        <li>Engaged in a collaborative experiment on crystallization of waste-polymers (polyethylene) into boards for
-pavement construction.</li>
-                        <li>Performed characterizations such as compressive test, tensile test and hardness test on material samples.</li>
-                        <li>Participated in research meetings and presented findings on material properties analysis.</li>
-                    </ul>
-                </div>
-
-                <!-- Experience 5 -->
-                <div data-aos="fade-up" data-aos-delay="600">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-2xl font-bold">Engineering Intern</h3>
-                        <div class="text-blue-400 mt-2 md:mt-0">Jul. 2018 - Aug. 2018</div>
-                    </div>
-                    <div class="flex items-center mb-4">
-                        <div class="w-4 h-4 rounded-full bg-indigo-500 mr-3"></div>
-                        <h4 class="text-lg">Ghana Civil Aviation Authority | Airport</h4>
-                    </div>
-                        <p class="text-gray-300 mb-4 text-lg">Conducted communication line checks, assisted in satellite installation and equipment maintenance, and recorded machine data to ensure reliable operations and accurate documentation.
-</p>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-300 text-lg">
-<li>Performed daily checks on communication lines, ensuring smooth and reliable connectivity.</li>
-                        <li>Contributed to satellite installation and assisted in the maintenance of equipment, ensuring optimal
-functionality.</li>
-                        <li>Engaged in daily reading and recording of machine data, ensuring accurate documentation and contributing to
-smooth operations.</li>
-                        
-                    </ul>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-    </section>
-    
-      
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Certifications</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Certification 1 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-blue-900/30 mr-4">
-                            <i data-feather="award" class="text-blue-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Data Analytics</h3>
-                    </div>
-                    <p class="text-gray-300 mb-4">Freecodecamp's Data Analysis with Python Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Nov. 2025</div>
-                    <a href="https://www.freecodecamp.org/certification/j_selorm/data-analysis-with-python-v7" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-                
-                <!-- Certification 2 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                            <i data-feather="award" class="text-purple-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Scientific Computing with Python</h3>
-                    </div>
-                    <p class="text-gray-300 mb-4">Freecodecamp's Scientific Computing with Python Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: May 2025</div>
-                    <a href="https://www.freecodecamp.org/certification/j_selorm/scientific-computing-with-python-v7" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-                  <!-- Certification 2 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                            <i data-feather="award" class="text-purple-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Advanced SQL</h3>
-                    </div>
-                    <p class="text-gray-300 mb-4">Kaggle's Advanced SQL Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Aug 2022</div>
-                    <a href="https://www.kaggle.com/jonsed" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-                <!-- Certification 2 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                            <i data-feather="award" class="text-purple-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold"> Data Visualization</h3>
-                    </div>
-                    <p class="text-gray-300 mb-4"> Kaggle's Data Visualization Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Jun 2022</div>
-                    <a href="https://www.kaggle.com/jonsed" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-                <!-- Certification 2 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                            <i data-feather="award" class="text-purple-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Intro. to Machine Learning </h3>
-                    </div>
-                    <p class="text-gray-300 mb-4">Kaggle's Introduction to ML with Python Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Jan 2022</div>
-                    <a href="https://www.kaggle.com/jonsed" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-                
-                <!-- Certification 3 -->
-                <div class="bg-gray-900 rounded-xl p-6 skill-card transition duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex items-center mb-4">
-                        <div class="p-3 rounded-lg bg-green-900/30 mr-4">
-                            <i data-feather="award" class="text-green-400"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Data Cleaning</h3>
-                    </div>
-                    <p class="text-gray-300 mb-4">Kaggle's Data Cleaning Certification</p>
-                    <div class="text-sm text-blue-400 mb-4">Issued: Feb 2020</div>
-                    <a href="https://www.kaggle.com/jonsed" class="text-blue-400 hover:text-blue-300 flex items-center">
-                        View Certificate <i data-feather="external-link" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Get In Touch</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
-            </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8" data-aos="fade-right">
-                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="p-3 rounded-lg bg-blue-900/30 mr-4">
-                                    <i data-feather="mail" class="text-blue-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Email</h4>
-                                    <p class="text-gray-300">djonathanselorm@proton.me</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="p-3 rounded-lg bg-purple-900/30 mr-4">
-                                    <i data-feather="phone" class="text-purple-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Phone</h4>
-                                    <p class="text-gray-300">(233) 5459-40851</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="p-3 rounded-lg bg-green-900/30 mr-4">
-                                    <i data-feather="map-pin" class="text-green-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium">Location</h4>
-                                    <p class="text-gray-300">Trento, Italy</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-10">
-                            <h4 class="text-xl font-bold mb-4">Connect With Me</h4>
-                            <div class="flex space-x-4">
-                                <a href="www.linkedin.com/in/jonathan-selorm" class="p-3 rounded-full bg-gray-700 hover:bg-blue-600 transition">
-                                    <i data-feather="linkedin" class="text-white"></i>
-                                </a>
-                                <a href="https://github.com/DjSelorm/" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition">
-                                    <i data-feather="github" class="text-white"></i>
-                                </a>
-                                <a href="#" class="p-3 rounded-full bg-gray-700 hover:bg-black transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-                                    </svg>
-</a>
-                                <a href="https://www.youtube.com" class="p-3 rounded-full bg-gray-700 hover:bg-red-500 transition">
-                                    <i data-feather="youtube" class="text-white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="200">
-                        <iframe src="https://forms.gle/39VETU5LxosQ16Xw6" width="100%" height="820" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">Loading…</iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-10">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <a href="#" class="text-2xl font-bold">
-                        <span class="relative inline-block">
-                            <span class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-25"></span>
-                            <span class="relative px-3 py-1 bg-gray-900 rounded-lg font-mono tracking-wider text-white">
-                                <span class="text-blue-400">D</span><span class="text-purple-400">J</span>
-                            </span>
-                        </span>
-                    </a>
-                    <p class="text-gray-400 mt-2">Bridging Materials Engineering and Data Science</p>
-                </div>
-                <div class="flex flex-col items-center md:items-end">
-                    <p class="text-gray-400">&copy; 2025 Selorm's Portfolio. All rights reserved.</p>
-                    <p class="text-gray-500 text-sm mt-2">Made with <i data-feather="heart" class="w-4 h-4 inline text-red-400"></i> for materials innovation!</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.createElement('div');
-        mobileMenu.id = 'mobile-menu';
-        mobileMenu.className = 'hidden md:hidden fixed top-0 right-0 h-full w-64 bg-gray-900 z-40 flex flex-col items-start p-6 space-y-6 border-l border-gray-800 shadow-xl';
-        mobileMenu.innerHTML = `
-            <button id="mobile-menu-close" class="self-end p-2">
-                <i data-feather="x"></i>
-            </button>
-            <a href="#about" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-            <a href="#skills" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a>
-            <a href="#projects" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
-            <a href="#experience" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
-            <a href="#certifications" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Certifications</a>
-            <a href="#contact" class="text-lg hover:text-blue-400 transition" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
-        `;
-
-        document.body.appendChild(mobileMenu);
-
-        mobileMenuButton.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-            } else {
-                mobileMenu.classList.add('hidden');
-            }
-            feather.replace();
-        });
-
-        document.getElementById('mobile-menu-close').addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-
-        // Close menu when clicking outside
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-
-        // Initialize animations
-        AOS.init({
-            once: true,
-            duration: 800
-        });
-        
-        // Typing animation
-const typingText = document.getElementById('typing-text');
-const cursor = document.querySelector('.typing-cursor');
-const fullText = "Hi, I'm Selorm.";
-let charIndex = 0;
-let isDeleting = false;
-let typingSpeed = 150;
-
-function type() {
-    // Slice the text up to current index
-    const currentText = fullText.substring(0, charIndex);
-
-    // Highlight "Hi, I'm" in white while keeping the rest normal
-    const hiPart = currentText.substring(0, 7);   // "Hi, I'm"
-    const namePart = currentText.substring(7);    // " Selorm."
-
-    typingText.innerHTML = `<span style="color:white;">${hiPart}</span>${namePart}`;
-    
-    if (!isDeleting && charIndex < fullText.length) {
-        charIndex++;
-        typingSpeed = 150;
-    } else if (isDeleting && charIndex > 0) {
-        charIndex--;
-        typingSpeed = 50;
-    }
-    
-    if (charIndex === fullText.length) {
-        isDeleting = true;
-        typingSpeed = 2000; // Pause at end
-        cursor.style.opacity = '1'; // Ensure cursor is visible at end
-    } else if (charIndex === 0 && isDeleting) {
-        isDeleting = false;
-        typingSpeed = 500; // Pause at start
-    }
-    
-    setTimeout(type, typingSpeed);
-}
-
-
-        // Cursor blink effect
-        function blinkCursor() {
-            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
-            setTimeout(blinkCursor, 500);
-        }
-
-        // Initialize feather icons
-        feather.replace();
-        
-        // Start animations
-        type();
-        blinkCursor();
-        
-        // Vanta.js background
-        VANTA.GLOBE({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3b82f6,
-            backgroundColor: 0x111827,
-            size: 0.8
-        });
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.remove('nav-transparent');
-                navbar.classList.add('nav-opaque');
-            } else {
-                navbar.classList.add('nav-transparent');
-                navbar.classList.remove('nav-opaque');
-            }
-        });
-    </script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
